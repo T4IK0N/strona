@@ -269,6 +269,18 @@ main {
     background: var(--primary-color);
 }
 
+.contact-title {
+    font-family: Lora, serif;
+    font-size: 350%;
+}
+
+.contact-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--default-gap);
+}
+
 .logo,
 .titleLora,
 .h1-title {
