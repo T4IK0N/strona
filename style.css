@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --background-color: #161616;
+    --text-color: #FFFFFF;
+    --primary-color: #271D33;
+    --secondary-color: #4A2477;
+    --accent-color: #721CD4;
+    --third-color: #6D6971;
+    --margin-website: 200px;
+    --cool-margin: 100px;
+    --default-gap: 20px;
+}
+
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+body {
+    background: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.site-padding {
+    padding-left: var(--margin-website);
+    padding-right: var(--margin-website);
+    box-sizing: border-box;
+    width: 100%;
+}
+.cool-margin {
+    padding-top: var(--cool-margin);
+    padding-bottom: var(--cool-margin);
+}
+
+nav,
+footer {
+    width: auto;
+    height: 10vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-hireUs {
+    padding: 8px 25px;
+}
+
+.half-split {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* nav */
+#nav-content,
+#footer-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 23vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/* hero */
+
+#hero {
+    width: 100%;
+    height: fit-content;
+}
+
+#hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--default-gap);
+}
+
+.hero-paragraph {
+    width: 65%;
+    font-size: 1.1em;
+}
+
+/* carousel */
+
+#carousel-container {
+    width: 100%;
+    height: 600px;
+}
+
+#carousel-content {
+    background: var(--background-color);
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    min-width: 240px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 300px 0 0 22vw; /* TODO: zmienic to guwno 300px! to jest tylko lazy fix! */
+    transform: translate(-50%, -50%);
+    border-radius: 13px;
+    padding: 30px;
+    gap: var(--default-gap);
+}
+#carousel {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+#carousel img {
+    width: 100%;
+    height: auto;
+}
+
+/* about us */
+
+#aboutUs {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutUs-photos {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+#aboutUs-photos img:not(img:first-child) {
+    margin-left: -50px;
+}
+
+.pepol {
+    min-width: 250px;
+    min-height: 250px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+#aboutUs-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--default-gap);
+}
+
+#aboutUs-paragraph {
+    text-align: end;
+    font-size: 1.15em;
+}
+
+.h1-title {
+    font-size: 2.5em;
+}
+
+#btn-callUs {
+    padding: 10px 25px;
+    font-size: 1.1em;
+}
+
+/* portfolio */
+
+#portfolio {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--default-gap);
+}
+
+#portfolio-paragraph {
+    font-size: 150%;
+}
+
+/* y us */
+
+#whyUs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--cool-margin);
+}
+
+#whyUs-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.whyUs-item {
+    padding: 60px;
+    background: #6D6971;
+    height: 420px;
+    border-radius: 10px;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    box-sizing: border-box;
+    width: calc(40% - 25px); /* szerokosc elementu - gap / 2 */
+}
+
+.whyUs-itemWide {
+    width: calc(60% - 25px);
+}
+
+.whyUs-item-title {
+    font-family: Lora, serif;
+    font-size: 400%;
+}
+.whyUs-content-paragraph {
+    font-size: 150%;
+}
+
+.background-primary {
+    background: var(--primary-color);
+}
+.background-secondary {
+    background: var(--secondary-color);
+}
+.background-accent {
+    background: var(--accent-color);
+}
+
+/* contact */
+#contactUs {
+    background: var(--primary-color);
+}
+
+.logo,
+.titleLora,
+.h1-title {
+    font-family: Lora, serif;
+    font-weight: 700;
+    font-size: 2.5rem; /* 400-700 */
+}
+
+a {
+    text-decoration: none;
+}
+
+.media-icons {
+    width: 70px;
+    height: 70px;
+}
+
+button {
+    background: linear-gradient(90deg, #4A2477, #9747FF);
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    padding: 13px 27px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 500;
+}
