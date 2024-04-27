@@ -127,7 +127,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 300px 0 0 22vw; /* TODO: zmienic to guwno 300px! to jest tylko lazy fix! */
+    margin: 300px 0 0 22vw;
     transform: translate(-50%, -50%);
     border-radius: 13px;
     padding: 30px;
@@ -138,22 +138,25 @@ main {
     overflow: hidden;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
+}
+#carousel > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: fit-content;
 }
 
 .carousel-item {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    height: fit-content;
 }
 
 .carousel-item > img {
-    height: 100%;
-    width: auto;
+    width: 100vw;
+    height: auto;
 }
 
 /* about us */
