@@ -50,7 +50,12 @@ carouselContainerElement.addEventListener("mousemove", e => {
     lastX = e.clientX;
     if (lastX != null) {
         if (isMouseDown) {
-            carouselElement.scrollLeft = carouselElement.scrollLeft - deltaX * 10;
+            let scroll = carouselElement.scrollLeft - deltaX * 10;
+            let maxScroll = carouselElement.getBoundingClientRect().width * (carouselElement.querySelector("div").querySelectorAll("div").length - 1);
+            if (scroll < 0) scroll = maxScroll;
+            if (scroll > maxScroll) scroll = 0;
+            carouselElement.scrollLeft = scroll;
+            console.log(scroll);
         }
     }
 });
