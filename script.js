@@ -63,7 +63,7 @@ function incrementCarousel() {
     lastImageIndex = currentImageIndex;
     currentImageIndex += 1;
     console.log(currentImageIndex);
-    if (currentImageIndex >= carouselElement.querySelector("div").querySelectorAll("div").length) currentImageIndex = 0;
+    if (currentImageIndex >= carouselElement.querySelector("div").querySelectorAll("div").length - 1) currentImageIndex = 0;
     hangeImage(currentImageIndex, true);
 }
 carouselInterval = setInterval(incrementCarousel, 10000);
