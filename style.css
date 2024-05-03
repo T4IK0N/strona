@@ -286,6 +286,10 @@ main {
     font-size: 150%;
 }
 
+.whyUs-animations {
+    width: 400px;
+}
+
 .background-primary {
     background: var(--primary-color);
 }
